@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-
 const App = () => {
-
   const [location, setLocation] = useState('');
   const [weatherData, setWeatherData] = useState({});
 
