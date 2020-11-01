@@ -5,7 +5,7 @@ const Search = ({ location, setLocation, setWeatherData }) => {
 
   return (
     <>
-    <SearchBox placeholder="ENTER LOCATION" /> <SearchButton onClick={() => alert('YOOOOOOUUUVE CLIIIIIICKED MEEEEEEEE!  Good!')}>SEARCH</SearchButton>
+    <SearchBox onChange={e => setLocation(e.target.value)} placeholder="ENTER LOCATION" /> <SearchButton onClick={() => alert('YOOOOOOUUUVE CLIIIIIICKED MEEEEEEEE!  Good!')}>SEARCH</SearchButton>
     </>
   )
 }
