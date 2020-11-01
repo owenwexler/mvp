@@ -5,7 +5,14 @@ const GlobalStyles = createGlobalStyle`
 
 body {
   font-family: 'Press Start 2P', sans-serif;
+  background-color: black;
+  color: white;
 }
+`
+
+const TextBox = styled.input`
+  padding: 6px;
+  text-align: left;
 `
 
 export default GlobalStyles;
