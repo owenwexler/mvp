@@ -26,3 +26,8 @@ const convertLocationStringToQuery = (locString) => {
   const [city, state] = separateCityAndState(locString);
   return `${city.replace(/ /g, '%20')}%2C%20${state.replace(/ /g, '%20')}`;
 }
+
+export {
+  hasAValidState,
+  convertLocationStringToQuery
+}

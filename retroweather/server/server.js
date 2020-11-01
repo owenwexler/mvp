@@ -12,11 +12,9 @@ const getWeatherCrossingData = require('../weathercrossing/weathercrossing.js');
 let locations = ['Hyattsville, MD', 'Madison, CT', 'San Francisco, CA', 'New York, NY', 'Washington, DC', 'Virginia Beach, VA'];
 
 app.get('/api/weather/', (req, res) => {
-  console.log(req.query.location);
   getWeatherCrossingData(req.query.location)
     .then((result) => {
-      res.json(result.data.location);
-      res.status(200);
+      res.status(200).json(result.data.location);
     })
     .catch((error) => {
       res.status(500).send(error);
