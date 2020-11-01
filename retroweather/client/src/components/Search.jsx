@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { SearchBox } from '../styles/StyledElements.jsx';
+import { SearchBox, SearchButton } from '../styles/StyledElements.jsx';
 
 const Search = ({ location, setLocation, setWeatherData }) => {
 
   return (
-    <SearchBox />
+    <>
+    <SearchBox placeholder="ENTER LOCATION" /> <SearchButton onClick={() => alert('YOOOOOOUUUVE CLIIIIIICKED MEEEEEEEE!  Good!')}>SEARCH</SearchButton>
+    </>
   )
 }
 

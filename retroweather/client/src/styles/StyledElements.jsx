@@ -29,8 +29,26 @@ const SearchBox = styled.input`
   margin-right: .2em;
 `
 
+const SearchButton = styled.button`
+  padding: 10px;
+  padding-left: 20px;
+  text-align: left;
+  border: 5px solid white;
+  width: 10em;
+  height: 50%;
+  font-family: 'Press Start 2P', sans-serif;
+  background-color: black;
+  color: white;
+  outline: none;
+  margin-right: .2em;
+  &:hover {
+    background-color: gray;
+  }
+`
+
 export {
   GlobalStyles,
   RWLogo,
-  SearchBox
+  SearchBox,
+  SearchButton
 };
