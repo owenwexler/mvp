@@ -36,6 +36,7 @@ bower_components/
 
 #API keys
 api.cfg
+weathercrossing/weather-api-key.js
 
 #Font
 font/press_start
