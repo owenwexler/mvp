@@ -24,7 +24,7 @@ const App = () => {
     <div>
       <GlobalStyles />
       <TopBar>
-        <RWLogo>SUPERRETROWEATHER</RWLogo>
+        <RWLogo>SuperRetroWeather</RWLogo>
         <Search></Search>
       </TopBar>
       <DefaultMessage />
