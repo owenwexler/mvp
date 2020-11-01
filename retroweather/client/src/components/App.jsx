@@ -29,11 +29,13 @@ const App = () => {
       alert('Please enter a valid city and state');
       return;
     }
+
     const query = convertLocationStringToQuery(location);
+
     fetch(`/api/weather?location=${query}`)
       .then(result => result.json())
       .then(data => setWeatherData(data))
-      .catch(err => alert('ERROR: ', err));
+      .catch(err => alert('Unknown location', err));
   }
 
   useEffect(() => {
