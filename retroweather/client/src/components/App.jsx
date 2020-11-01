@@ -20,7 +20,10 @@ const App = () => {
   return (
     <div>
       <GlobalStyles />
-      <h1>WELCOME TO THE RETRODOME.  MEOW MEOW MEOW.</h1>
+      <h1>WELCOME TO THE RETRODOME.</h1>
+      <h2>MEOW MEOW MEOW.</h2>
+      <h3>MEOW.</h3>
+      <p>MEOW.</p>
     </div>
   )
 }
