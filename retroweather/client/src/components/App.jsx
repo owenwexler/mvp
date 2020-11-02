@@ -19,10 +19,11 @@ import {
 // Components
 import DefaultMessage from './DefaultMessage.jsx';
 import Search from './Search.jsx';
+import WeatherModule from './WeatherModule.jsx';
 
 const App = () => {
   const [location, setLocation] = useState('');
-  const [weatherData, setWeatherData] = useState({});
+  const [weatherData, setWeatherData] = useState(null);
 
   const getWeatherDataFromAPI = (location) => {
     if (!hasAValidState(location)) {
@@ -49,7 +50,7 @@ const App = () => {
         <RWLogo>SuperRetroWeather</RWLogo>
         <Search location={location} setLocation={setLocation} getWeatherDataFromAPI={getWeatherDataFromAPI}></Search>
       </TopBar>
-      <DefaultMessage />
+      {weatherData !== null ? <WeatherModule weatherData={weatherData} /> : <DefaultMessage />}
     </div>
   )
 }
