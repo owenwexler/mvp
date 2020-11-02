@@ -42,4 +42,4 @@ weathercrossing/wc-api-key.js
 font/press_start
 
 #images
-/images
+/client/src/images
