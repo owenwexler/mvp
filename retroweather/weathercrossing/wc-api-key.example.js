@@ -1,3 +1,3 @@
-WEATHERCROSSING_API_KEY='asdlfkjasdofijweoifjwofijwofijwfoij';
+WEATHERCROSSING_API_KEY='FILL_ME_IN';
 
 module.exports = WEATHERCROSSING_API_KEY;
