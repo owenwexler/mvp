@@ -50,10 +50,15 @@ const CurrentConditionDateWeatherLogo = styled.h1`
   font-size: 65;
 `
 
+const SevenDayHeaderText = styled.h3`
+  font-size: 34;
+`
+
 export {
   GlobalStyles,
   RWLogo,
   SearchBox,
   SearchButton,
-  CurrentConditionDateWeatherLogo
+  CurrentConditionDateWeatherLogo,
+  SevenDayHeaderText
 };

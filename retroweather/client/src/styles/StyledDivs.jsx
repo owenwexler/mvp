@@ -23,8 +23,8 @@ const CurrentConditionContainer = styled.div`
   height: 25%
   margin: 5px;
   margin-top: 1px;
-  margin-bottom: 30px;
-  padding: 5px;
+  margin-bottom: 5px;
+  padding: 2px;
   padding-top: 0px;
 `
 
