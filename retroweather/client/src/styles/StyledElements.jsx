@@ -46,9 +46,14 @@ const SearchButton = styled.button`
   }
 `
 
+const CurrentConditionDateWeatherLogo = styled.h1`
+  font-size: 65;
+`
+
 export {
   GlobalStyles,
   RWLogo,
   SearchBox,
-  SearchButton
+  SearchButton,
+  CurrentConditionDateWeatherLogo
 };

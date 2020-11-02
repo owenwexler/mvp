@@ -12,19 +12,21 @@ module.exports = {
     path: DIST_DIR
   },
   module: {
-    rules: [{
-      test: /\.jsx?/,
-      include: SRC_DIR,
-      exclude: /(node_modules|bower_components)/,
-      use: {
-        loader: 'babel-loader',
-        query: {
-          presets: [
-            "@babel/preset-react",
-            "@babel/preset-env"
-          ],
+    rules: [
+      {
+        test: /\.jsx?/,
+        include: SRC_DIR,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          query: {
+            presets: [
+              "@babel/preset-react",
+              "@babel/preset-env"
+            ],
+          }
         }
       }
-    }]
+    ]
   }
 };
