@@ -33,8 +33,25 @@ const formatDateMMDDYY = (dateTime) => {
   return `${month}/${day}/${year}`;
 }
 
+const getPicNameFromCondition = (condition) => {
+  if (condition === 'Clear') {
+    return 'clear.png';
+  } else if (condition === 'Overcast') {
+    return 'cloudy.png';
+  } else if (condition === 'Rain' || condition.includes('Rain')) {
+    return 'rain.png';
+  } else if (condition === 'Partially cloudy') {
+    return 'partly-cloudy.png';
+  } else if (condition === 'Snow') {
+    return 'snow.png';
+  } else if (condition === 'Thunderstorms')  {
+    return 'thunderstorm.png';
+  }
+}
+
 export {
   hasAValidState,
   convertLocationStringToQuery,
-  formatDateMMDDYY
+  formatDateMMDDYY,
+  getPicNameFromCondition
 }

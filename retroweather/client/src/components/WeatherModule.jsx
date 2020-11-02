@@ -9,8 +9,8 @@ import CurrentConditions from './CurrentConditions.jsx';
 const WeatherModule = ( {weatherData} ) => (
   <>
   <GlobalStyles />
-  <h2 style={{textAlign: 'center'}}>{weatherData.name}</h2>
-  <CurrentConditions currentConditions={weatherData.currentConditions} />
+  <h2 style={{textAlign: 'center', marginBottom: '50px'}}>{weatherData.name}</h2>
+  <CurrentConditions currentConditions={weatherData.currentConditions} currentIconStr={weatherData.values[0].conditions}/>
   </>
 )
 

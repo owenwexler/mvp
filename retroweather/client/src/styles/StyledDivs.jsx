@@ -21,10 +21,10 @@ const CurrentConditionContainer = styled.div`
   align-items: center;
   width: 98%;
   height: 25%
-  margin: 10px;
-  margin-top: 3px;
+  margin: 5px;
+  margin-top: 1px;
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 5px;
   padding-top: 0px;
 `
 
