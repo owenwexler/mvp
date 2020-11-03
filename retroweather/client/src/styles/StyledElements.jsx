@@ -54,11 +54,19 @@ const SevenDayHeaderText = styled.h3`
   font-size: 34;
 `
 
+const SavedLocationEntryStyle = styled.h5`
+  cursor: pointer;
+  &:hover {
+    color: gray;
+  }
+`
+
 export {
   GlobalStyles,
   RWLogo,
   SearchBox,
   SearchButton,
   CurrentConditionDateWeatherLogo,
-  SevenDayHeaderText
+  SevenDayHeaderText,
+  SavedLocationEntryStyle
 };
