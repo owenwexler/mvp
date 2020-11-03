@@ -12,7 +12,7 @@ const WeatherModule = ( {weatherData} ) => (
   <GlobalStyles />
   <h2 style={{textAlign: 'center', marginBottom: '50px'}}>{weatherData.name}</h2>
   <CurrentConditions currentConditions={weatherData.currentConditions} currentIconStr={weatherData.values[0].conditions}/>
-  <SevenDayList sevenDayForecast={weatherData.values} />
+  <SevenDayList sevenDayForecast={weatherData.values.slice(0, 7)} />
   </>
 )
 
