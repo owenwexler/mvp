@@ -18,8 +18,8 @@ const SevenDayListEntry = ({dayData}) => {
       <CurrentConditionContainer>
         <img src={`https://retroweather.s3.amazonaws.com/${getPicNameFromCondition(dayData.conditions)}`} height="50" width="50"></img>
         <SevenDayHeaderText>{formatDateMMDDYY(dayData.datetimeStr)}</SevenDayHeaderText>
-        <SevenDayHeaderText>LOW: {Math.round(dayData.maxt)}º</SevenDayHeaderText>
-        <SevenDayHeaderText>HIGH: {Math.round(dayData.mint)}º </SevenDayHeaderText>
+        <SevenDayHeaderText>LOW: {Math.round(dayData.mint)}º</SevenDayHeaderText>
+        <SevenDayHeaderText>HIGH: {Math.round(dayData.maxt)}º </SevenDayHeaderText>
       </CurrentConditionContainer>
     </>
   )
