@@ -24,6 +24,27 @@ import WeatherModule from './WeatherModule.jsx';
 const App = () => {
   const [location, setLocation] = useState('');
   const [weatherData, setWeatherData] = useState(null);
+  const [savedLocations, setSavedLocations] = useState([]);
+
+  const getSavedLocations = () => {
+    fetch('/api/weather/savedlocations')
+      .then(result => result.json())
+      .then(data => setSavedLocations(data));
+  }
+
+  const postToSavedLocation = (loc) => {
+    fetch('/api/weather/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        location: loc
+      })
+    })
+    .then(res => getSavedLocations())
+    .catch(err => alert('Error posting to saved locations'));
+  }
 
   const getWeatherDataFromAPI = (location) => {
     if (!hasAValidState(location)) {
@@ -37,12 +58,13 @@ const App = () => {
       .then(result => result.json())
       .then((data) => {
         setWeatherData(data);
+        postToSavedLocation(location);
       })
       .catch(err => alert('Unknown location', err));
   }
 
   useEffect(() => {
-    console.log('N I N T E N D O  V I B E S');
+    getSavedLocations();
   }, []);
 
   return (
