@@ -35,4 +35,4 @@ app.post('/api/weather/', (req, res) => {
   res.json(locations);
 });
 
-app.listen(3000, () => {console.log(`R E T R O W E A T H E R listening on PORT 3000...`)});
+app.listen(3000, () => {console.log(`S U P E R R E T R O W E A T H E R server listening on PORT 3000...`)});

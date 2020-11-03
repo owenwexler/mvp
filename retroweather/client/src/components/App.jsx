@@ -35,7 +35,9 @@ const App = () => {
 
     fetch(`/api/weather?location=${query}`)
       .then(result => result.json())
-      .then(data => setWeatherData(data))
+      .then((data) => {
+        setWeatherData(data);
+      })
       .catch(err => alert('Unknown location', err));
   }
 

@@ -11,14 +11,14 @@ import {
   getPicNameFromCondition
  } from '../helper/helper.js';
 
-const CurrentConditions = ({currentConditions, currentIconStr}) => {
+const CurrentConditions = ({currentConditions, currentDateTime, currentIconStr}) => {
   return (
     <>
       <h2 style={{textAlign: 'center', marginBottom: '5px'}}>CURRENT CONDITIONS</h2>
       <CurrentConditionContainer>
         <img src={`https://retroweather.s3.amazonaws.com/${getPicNameFromCondition(currentIconStr)}`} height="200" width="200"></img>
         <CurrentConditionDateWeatherLogo>{formatDateMMDDYY(currentConditions.datetime)}</CurrentConditionDateWeatherLogo>
-        <CurrentConditionDateWeatherLogo>{currentConditions.temp}º</CurrentConditionDateWeatherLogo>
+        <CurrentConditionDateWeatherLogo>{Math.round(currentConditions.temp)}º</CurrentConditionDateWeatherLogo>
       </CurrentConditionContainer>
     </>
   )
