@@ -17,25 +17,25 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  SuperRetroWeather
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  An 8-Bit weather app
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  SuperRetroWeather is a weather app with a twist - an 8-bit retro experience that takes you right back to the good old days of the Nintendo Entertainment System.  Just type your location into the search box and you can get a variety of weather data for your city in a fun nostalgic 8-bit package.  As an added bonus, the app also remembers the last five locations you visited!
 
 ## Problem ##
   There aren't enough 8-bit retro vibes in my current weather app.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  Our app gives you the weather... with 8-bit retro vibes.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "We hope this product will be a strong contender of the niche market of 8-bit retro weather apps."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  Just go to the site and type your city into the search box - it's as simple as that!
 
 ## Customer Quote ##
   "RetroWeather gave me the weather and took me back to the old-school NES days at the same time!  Radical!"
