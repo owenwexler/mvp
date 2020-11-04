@@ -4,7 +4,7 @@ import SevenDayListEntry from './SevenDayListEntry.jsx';
 const SevenDayList = ({ sevenDayForecast }) => {
   return (
     <>
-      <h2 style={{textAlign: 'center'}}>SEVEN-DAY FORECAST</h2>
+      <h2 style={{textAlign: 'center', marginBottom: '40px'}}>SEVEN-DAY FORECAST</h2>
       {sevenDayForecast.map((day, index) => {
         return <SevenDayListEntry key={index} dayData={day} />
       })}

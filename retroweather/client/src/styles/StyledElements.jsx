@@ -46,19 +46,32 @@ const SearchButton = styled.button`
   }
 `
 
+const GeneralHeader = styled.h2`
+  text-align: center,
+  margin-bottom: 30px;
+`
+
 const CurrentConditionDateWeatherLogo = styled.h1`
   font-size: 65;
+  margin: 12px;
 `
 
 const SevenDayHeaderText = styled.h3`
   font-size: 34;
+  margin: 12px;
+  margin-top: 40px;
 `
 
 const SavedLocationEntryStyle = styled.h5`
+  margin: 11px;
   cursor: pointer;
   &:hover {
     color: gray;
   }
+`
+
+const SevenDaySubHeaderH5 = styled.h5`
+  margin: 8px;
 `
 
 export {
@@ -68,5 +81,6 @@ export {
   SearchButton,
   CurrentConditionDateWeatherLogo,
   SevenDayHeaderText,
+  SevenDaySubHeaderH5,
   SavedLocationEntryStyle
 };
