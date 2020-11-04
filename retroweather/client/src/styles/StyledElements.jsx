@@ -70,6 +70,10 @@ const SavedLocationEntryStyle = styled.h5`
   }
 `
 
+const CurrentConditionSubHeaderH4 = styled.h3`
+  margin: 8px;
+`
+
 const SevenDaySubHeaderH5 = styled.h5`
   margin: 8px;
 `
@@ -82,5 +86,6 @@ export {
   CurrentConditionDateWeatherLogo,
   SevenDayHeaderText,
   SevenDaySubHeaderH5,
+  CurrentConditionSubHeaderH4,
   SavedLocationEntryStyle
 };

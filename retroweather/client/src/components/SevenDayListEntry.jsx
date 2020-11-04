@@ -9,7 +9,7 @@ import {
 // Text Styles
 import {
   SevenDayHeaderText,
-  SevenDaySubHeaderH5
+  SevenDaySubHeaderH5,
 } from '../styles/StyledElements.jsx';
 
 // Helpers
