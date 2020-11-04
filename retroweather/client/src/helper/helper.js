@@ -10,6 +10,21 @@ const stateAbbreviations = [
   'VT','VI','VA','WA','WV','WI','WY'
  ];
 
+ const hours = {
+   13: 1,
+   14: 2,
+   15: 3,
+   16: 4,
+   17: 5,
+   18: 6,
+   19: 7,
+   20: 8,
+   21: 9,
+   22: 10,
+   23: 11,
+   24: 12
+ }
+
 const separateCityAndState = (locString) => {
   const commaIndex = locString.indexOf(',');
   const city = locString.slice(0, commaIndex).trim();
@@ -33,6 +48,25 @@ const formatDateMMDDYY = (dateTime) => {
   return `${month}/${day}/${year}`;
 }
 
+const formatTime = (dateTime) => {
+  const t = dateTime.indexOf('T');
+  const time = dateTime.slice(t + 1, t + 6);
+  const hour = Number(time.slice(0, 2));
+  const minute = time.slice(time.indexOf(':') + 1);
+  const suffix = hour > 12 ? 'PM' : 'AM';
+
+  let formattedHour;
+
+  if (hour > 12) {
+    formattedHour = hours[hour];
+  } else {
+    formattedHour = hour;
+  }
+
+  return `${formattedHour}:${minute}${suffix}`;
+}
+
+
 const getPicNameFromCondition = (condition) => {
   if (condition === 'Clear') {
     return 'clear.png';
@@ -53,5 +87,6 @@ export {
   hasAValidState,
   convertLocationStringToQuery,
   formatDateMMDDYY,
+  formatTime,
   getPicNameFromCondition
 }

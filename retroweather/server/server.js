@@ -9,7 +9,7 @@ app.use(express.json());
 
 const getWeatherCrossingData = require('../weathercrossing/weathercrossing.js');
 
-let locations = ['Hyattsville, MD', 'Madison, CT', 'San Francisco, CA'];
+let locations = ['New York, NY', 'Dallas, TX', 'San Francisco, CA'];
 
 app.get('/api/weather/', (req, res) => {
   getWeatherCrossingData(req.query.location)

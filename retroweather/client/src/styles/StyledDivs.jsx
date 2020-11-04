@@ -38,6 +38,7 @@ const CurrentConditionContainer = styled.div`
   margin: 5px;
   margin-top: 1px;
   margin-bottom: 5px;
+  margin-left: 10px;
   padding: 2px;
   padding-top: 0px;
 `
@@ -52,6 +53,7 @@ const SevenDayMainContainer = styled.div`
   margin: 3px;
   margin-top: 1px;
   margin-bottom: 0px;
+  margin-left: 15px;
   padding: 2px;
 `
 
@@ -65,6 +67,7 @@ const SevenDaySubheaderContainer = styled.div`
   margin: 0px;
   padding: 2px;
   padding-top: 0px;
+  margin-left: 15px;
 `
 
 export {

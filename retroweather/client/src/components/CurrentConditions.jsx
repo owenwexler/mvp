@@ -10,6 +10,7 @@ import {
 // Helpers
 import {
   formatDateMMDDYY,
+  formatTime,
   getPicNameFromCondition
  } from '../helper/helper.js';
 
@@ -32,8 +33,8 @@ const CurrentConditions = ({currentConditions, currentDateTime, currentIconStr})
       <CurrentConditionContainer>
         <CurrentConditionSubHeaderH4>HUMIDITY: {Math.round(currentConditions.humidity)}</CurrentConditionSubHeaderH4>
         <CurrentConditionSubHeaderH4>PRECIP: {Math.round(currentConditions.precip)}</CurrentConditionSubHeaderH4>
-        <CurrentConditionSubHeaderH4>SNOW: {Math.round(currentConditions.snow)}</CurrentConditionSubHeaderH4>
-        <CurrentConditionSubHeaderH4>SNOW DEPTH: {Math.round(currentConditions.snowdepth)}</CurrentConditionSubHeaderH4>
+        <CurrentConditionSubHeaderH4>SUNRISE: {currentConditions.sunrise ? formatTime(currentConditions.sunrise) : 'N/D'}</CurrentConditionSubHeaderH4>
+        <CurrentConditionSubHeaderH4>SUNSET: {currentConditions.sunset ? formatTime(currentConditions.sunset) : 'N/D'}</CurrentConditionSubHeaderH4>
       </CurrentConditionContainer>
       <br/>
       <br/>
