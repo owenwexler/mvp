@@ -7,9 +7,9 @@ To install dependencies, type ``npm install`` in your terminal.
 
 ## Server Operations
 
-To watch the front-end in development type ``npm run react-dev``
-To start the server type ``npm start``
+- To watch the front-end in development type ``npm run react-dev``
+- To start the server type ``npm start``
 
-## Code Location
+## File Location
 
 The code is located in the ``/retroweather`` subdirectory.
