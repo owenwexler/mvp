@@ -4,6 +4,8 @@ SuperRetroWeather is an open-source weather app with a twist - an 8-bit retro ex
 
 8-Bit weather images by [Mariia Khmelnytska](https://www.istockphoto.com/portfolio/kmarfu?assettype=image&mediatype=illustration&sort=best), courtesy of [iStock.com](http://iStockPhoto.com)
 
+![](srw_demo_1.gif) ![](srw_demo_2.gif) ![](srw_demo_3.gif)
+
 ## File Location
 
 - The code is located in the ``/retroweather`` subdirectory.
